@@ -1,5 +1,3 @@
-console.log("it Works")
-
 $(document).ready(function(){
     $('.submit').click(function(event) {
         console.log('submit works')
@@ -35,3 +33,4 @@ $(document).ready(function(){
         }
     })
 })
+
