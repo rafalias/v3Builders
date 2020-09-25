@@ -36,7 +36,7 @@
 </head>
 <body>
   <div id="loader-wrapper">
-   <img src="https://v3builders.s3-ap-southeast-1.amazonaws.com/v3load3.gif" alt="" width="100%">
+   <img src="https://v3builders.s3-ap-southeast-1.amazonaws.com/v3Load.gif" alt="" width="100%">
   </div>
    <!-- Navbar section -->
    <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
@@ -48,7 +48,7 @@
       </button>
       
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">       
+        <ul class="navbar-nav mr-auto pr-5 mr-5 pl-0 ml-0">       
           <li class="nav-item active"><a class="nav-link" href="#Home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#About">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="#Services">Services</a></li>
@@ -325,13 +325,15 @@ $('.navbar-nav>li>a').on('click', function(){
 });
 </script>
 <script type="text/javascript">
-  var loader = document.getElementById("loader-wrapper");
-  window.addEventListener("load",function(){
+var loader = document.getElementById("loader-wrapper");
+  setTimeout(function(){
     loader.style.height="200px";
     loader.style.width="200px";
     loader.style.borderRadius ="50%";
     loader.style.visibility="hidden";
-  });
+  document.getElementById("loader-wrapper").style.display = "block"; 
+ }, 6000);
 </script>
+
 </body>
 </html>
