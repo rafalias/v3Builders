@@ -1,4 +1,23 @@
 /* General */
+
+#loader-wrapper{
+    width:100%;
+    height:100%;
+    top:50%;
+    left:50%;
+    position: fixed;
+    z-index:999999;
+    background-color:grey;
+    transform: translate(-50%,-50%);
+}
+
+#loader-wrapper img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
 body{
     background-color:#808080;
     background-attachment: fixed;

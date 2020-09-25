@@ -26,6 +26,9 @@
  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div id="loader-wrapper">
+    <img src="https://v3builders.s3-ap-southeast-1.amazonaws.com/v3load3.gif" alt="" width="100%">
+   </div>
    <!-- Navbar section -->
    <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
     <a class="navbar-brand"><img src="img/masterlogo.png" width="90" height="65"  alt="logo" loading="lazy">
@@ -100,5 +103,14 @@
     })
   
   </script>
+  <script type="text/javascript">
+  var loader = document.getElementById("loader-wrapper");
+  window.addEventListener("load",function(){
+    loader.style.height="200px";
+    loader.style.width="200px";
+    loader.style.borderRadius ="50%";
+    loader.style.visibility="hidden";
+  });
+</script>
 </body>
 </html>
