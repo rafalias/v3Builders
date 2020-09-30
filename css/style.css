@@ -64,7 +64,7 @@ font-family: 'Oxygen', sans-serif;
 /* Navbar */
 .navbar-nav{
 display:flex;
-justify-content: center;
+justify-content: right;
 }
 
 .nav-item{
@@ -139,6 +139,10 @@ flex-direction: column;
     background-color:#808080;
 }
 
+#About h2 span{
+    color:white;
+}
+
 #AbtImg{
     overflow: hidden;
 }
@@ -157,19 +161,18 @@ transition:0.75s;
 }
 
 @media only screen and (min-width:600px){
-#About .item img{
+#About .fit-image{
     width: 100%;
-    height: 300px;
+    height: 280px;
 }
 }
 
 @media only screen and (max-width:600px){
-#About .item img{
+#About .fit-image{
     width: 100%;
-    height: auto;
+    height: 510px;
 }
 }
-
 
 .img-modal{
     margin: auto;
@@ -211,8 +214,12 @@ transition:0.75s;
 #Services{
     padding: 10vh;
     background-image: url(../img/Web-03.png);
-    background-attachment: fixed;
-    background-size: 100vw 100vh;
+    /* background-attachment: fixed; */
+    /* background-size: 100vw 100vh; */
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
             
@@ -221,6 +228,10 @@ transition:0.75s;
 #Projects{
     background-color:	#808080;
     background-attachment: fixed;
+}
+
+#Projects h2 span{
+    color:white;
 }
 
 .column{
@@ -295,10 +306,16 @@ color:#6F1E51;
 #Contacts{
 padding: 10vh;
 background-image: url(../img/Web-03.png);
-background-attachment: fixed;
+/* background-attachment: fixed;
 background-size: 100vw 100vh;
+background-repeat: no-repeat; */
+-o-background-size: cover;
+-moz-background-size: cover;
+-webkit-background-size:cover;
+background-size: cover;
 background-repeat: no-repeat;
 }
+
 /* ratio 16:9 is */
 /* ratio 16:9 (100%/16*9 = 56.25%) */
 .iframe-container{
@@ -318,14 +335,6 @@ margin:0;
 height:100%;
 width:100%; 
 }
-
-/* #Contacts h3{
-font-size:100%;
-}
-
-#Contacts p{
-font-size:80%;
-} */
 
 form{
 padding: 20px 30px 20px 0px; 
