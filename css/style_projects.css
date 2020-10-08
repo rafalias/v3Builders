@@ -62,13 +62,14 @@ background-attachment: fixed;
 
 /* End navbar */
 /* header */
-h2 span{
+h1 span{
     font-family: 'Oxygen', sans-serif;
     color:#fff;
 }
 
-p{
+h5{
     font-family: 'Oxygen', sans-serif;
+    color:#fff;
 }
 
 .border{

@@ -53,7 +53,7 @@ justify-content: center;
 text-align: center;
 }
 
-h2 span{
+h1 span{
 font-family: 'Oxygen', sans-serif;
 }
 
@@ -141,6 +141,10 @@ flex-direction: column;
 }
 
 #About h2 span{
+    color:white;
+}
+
+#About h1 span{
     color:white;
 }
 
@@ -243,7 +247,7 @@ transition:0.75s;
     background-attachment: fixed;
 }
 
-#Projects h2 span{
+#Projects h1 span{
     color:white;
 }
 
